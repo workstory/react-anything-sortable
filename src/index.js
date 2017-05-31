@@ -172,6 +172,10 @@ const Sortable = createReactClass({
 
     // start listening mousemove and mouseup
     this.bindEvent();
+
+    if (isFunction(this.props.onSortStart)) {
+      this.props.onSortStart();
+    }
   },
 
   /**
@@ -222,6 +226,10 @@ const Sortable = createReactClass({
   handleMouseUp() {
     const _hasMouseMoved = this._isMouseMoving;
     this.unbindEvent();
+
+    if (isFunction(this.props.onSortEnd)) {
+      this.props.onSortEnd();
+    }
 
     const draggingIndex = this._draggingIndex;
     // reset temp lets
