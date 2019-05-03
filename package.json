@@ -1,6 +1,6 @@
 {
   "name": "react-anything-sortable",
-  "version": "1.7.2",
+  "version": "1.7.4",
   "description": "A ReactJS component that can drag and sort any children with IE8 compatibility",
   "main": "lib/index.js",
   "scripts": {
@@ -51,8 +51,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0",
-    "react-dom": "^0.14.0 || ^15.0.0"
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0 || ^16.0.0"
   },
   "dependencies": {
     "create-react-class": "^15.5.2",
